@@ -7,109 +7,136 @@
   <meta name="keywords" content="java, javaScript, css">
   <meta name="description" content="Это мой путь в программировании">
   <title>My Way</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-  <img src="images/20190903_105840.jpg" alt="Здусь фото Евгения Тульнева" width="150">
+  <div class="container">
 
-  <h1>Евгений Тульнев</h1>
+    <div class="info">
+      <div class="avatar">
+        <img src="images/avatar.jpg" alt="Здусь фото Евгения Тульнева">
+      </div>
 
-  <p>Я middle разработчик в компании <strong>Юнитариус</strong>. Я началс свой путь в программировании как
-    Java-разработчик. В данный момент времени я работаю с платформой разработанной компанией Юнитариус, которая
-    называется <strong>xBPM</strong> Платформа предназначена для low code разработки. Работа с платформой осуществляется
-    на языке программирования JavaScript. Сейчас я осваиваю html и CSS для того чтобы стать полноценным fulstack
-    разработчиком </p>
 
-  <p>Я люблю <em>путешествовать, изучать иностранные языки, бильярд и программирование</em></p>
+      <div class="info-text">
+        <h1>Евгений Тульнев</h1>
 
-  <p><strong>Список социальных сетей:</strong></p>
+        <p class="about">Я middle разработчик в компании <strong>Юнитариус</strong>. Я началс свой путь в
+          программировании как
+          Java-разработчик. В данный момент времени я работаю с платформой разработанной компанией Юнитариус, которая
+          называется <strong>xBPM</strong> Платформа предназначена для low code разработки. Работа с платформой
+          осуществляется
+          на языке программирования JavaScript. Сейчас я осваиваю html и CSS для того чтобы стать полноценным fulstack
+          разработчиком </p>
 
-  |
-  <a href="https://t.me/etulnev" target="_blank">Telegram</a>
-  |
+        <p class="about">Я люблю <em>путешествовать, изучать иностранные языки, бильярд и программирование</em></p>
 
-  <h2>Мои хобби</h2>
+        <strong>Список социальных сетей:</strong>
 
-  <ol>
-    <li>Путешествия</li>
-    <li>Иностранные языки</li>
-    <li>Фотография</li>
-    <li>Кинематограф</li>
-    <li>Музыка</li>
-    <li>Бильярд</li>
-  </ol>
+        <p>
+          |
+          <a href="https://t.me/etulnev" target="_blank">Telegram</a>
+          |
+        </p>
 
-  <h2>Опыт работы</h2>
 
-  <table>
-    <thead>
-      <tr>
-        <th>Название</th>
-        <th>Должность</th>
-        <th>Год</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>ООО "Юнитариус" (Москва)</td>
-        <td>Ведущий инженер разработчик</td>
-        <td>2021</td>
-      </tr>
-      <tr>
-        <td>Росалкогольрегулирование (Москва)</td>
-        <td>Советник отдела функционального развития вспомогательных информационных систем, Управления цифровой
-          трансформации и развития информационных систем</td>
-        <td>2016-2021</td>
-      </tr>
-      <tr>
-        <td>ООО Фирма "Гальмед" (Москва)</td>
-        <td>Системный инженер, Электроник</td>
-        <td>2015-2016</td>
-      </tr>
-      <tr>
-        <td>"Связьтранснефть" АО филиал Северо-Кавказский (Армавир)</td>
-        <td>Системный инженер, Электроник</td>
-        <td>2012-2015</td>
-      </tr>
-      <tr>
-        <td>МБОУ-СОШ№14 (Армавир)</td>
-        <td>Системный инженер, Электроник</td>
-        <td>2006-2015</td>
-      </tr>
-      <tr>
-        <td>ООО "Информационные технологии" (Армавир)</td>
-        <td>Сервисный инженер</td>
-        <td>1999-2006</td>
-      </tr>
-    </tbody>
-  </table>
-  <p>
-  <h2>Связаться со мной</h2>
-  </p>
-  <form>
-    <div>
-      <label for="name">Ваше имя</label>
-      <input type="text" id="name" 
-      placeholder="Ваше имя">
+      </div>
+
+
+
+
     </div>
 
-    <div>
-      <label for="email">Ваш email</label>
-      <input type="email" id="email" 
-      placeholder="Ваш email">
+    <div class="card bg-green">
+      <h2>Мои хобби</h2>
+
+      <ol class="list-hobbies">
+        <li>Путешествия</li>
+        <li>Иностранные языки</li>
+        <li>Фотография</li>
+        <li>Кинематограф</li>
+        <li>Музыка</li>
+        <li>Бильярд</li>
+      </ol>
     </div>
 
-    <div>
-      <label for="message">Ваше сообщение:</label>
-      <br>
-      <textarea id="message" cols="20" rows="5" 
-      placeholder="Введите сообщение..."></textarea>
+
+    <div class="card bg-blue">
+      <h2>Опыт работы</h2>
+
+      <table class="table-exp">
+        <!-- <thead>
+          <tr>
+            <th>Название</th>
+            <th>Должность</th>
+            <th>Год</th>
+          </tr>
+        </thead> -->
+        <tbody>
+          <tr>
+            <td>ООО "Юнитариус" (Москва)</td>
+            <td>Ведущий инженер разработчик</td>
+            <td>2021</td>
+          </tr>
+          <tr>
+            <td>Росалкогольрегулирование (Москва)</td>
+            <td>Советник отдела функционального развития вспомогательных информационных систем, Управления цифровой
+              трансформации и развития информационных систем</td>
+            <td>2016-2021</td>
+          </tr>
+          <tr>
+            <td>ООО Фирма "Гальмед" (Москва)</td>
+            <td>Системный инженер, Электроник</td>
+            <td>2015-2016</td>
+          </tr>
+          <tr>
+            <td>"Связьтранснефть" АО филиал Северо-Кавказский (Армавир)</td>
+            <td>Системный инженер, Электроник</td>
+            <td>2012-2015</td>
+          </tr>
+          <tr>
+            <td>МБОУ-СОШ№14 (Армавир)</td>
+            <td>Системный инженер, Электроник</td>
+            <td>2006-2015</td>
+          </tr>
+          <tr>
+            <td>ООО "Информационные технологии" (Армавир)</td>
+            <td>Сервисный инженер</td>
+            <td>1999-2006</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
-    <button type="submit">Отправить!</button>
 
-  </form>
+
+
+    <form class="form">
+      <h2>Связаться со мной</h2>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Ваше имя</label>
+          <input type="text" id="name" placeholder="Ваше имя">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Ваш email</label>
+          <input type="email" id="email" placeholder="Ваш email">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Ваше сообщение:</label>
+        <textarea id="message" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
+      </div>
+
+      <button class="btn" type="submit">Отправить!</button>
+
+    </form>
+  </div>
+
 
 </body>
 
